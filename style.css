@@ -1,7 +1,9 @@
 /* Add a black background color to the top navigation */
-.container {
+.flex-container {
+    display: flex;
     padding-right: 2%;
     padding-left: 2%;
+    background-color: rgb(240, 231, 231);
 }
 
 .topnav {
@@ -18,6 +20,12 @@
     text-decoration: none;
     font-size: 17px;
 }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 /* Change the color of links on hover */
 .topnav a:hover {
